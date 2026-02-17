@@ -22,15 +22,15 @@ int main(){
     double total_price;                 //meal + tip + tax
 
     //User input
-    cout << "welcome to _ "
+    cout << "welcome to _ ";
     cout << "Today's special: " << meal_name << endl;
     cout << endl;
-    cout << "How many would you like? "
+    cout << "How many would you like? ";
     cin >> num_meals;
 
     
     // Do math things
-    sub_total = meal_price * num_meals
+    sub_total = meal_price * num_meals;
 
     // Show the results 
     cout << "Your Order" << endl << "------------------" << endl;
