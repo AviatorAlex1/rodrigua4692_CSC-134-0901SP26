@@ -22,7 +22,7 @@ int main(){
     double total_price;                 //meal + tip + tax
 
     //User input
-    cout << "welcome to Alex's Pizza Spot "; << endl;
+    cout << "welcome to Alex's Pizza Spot " << endl;
     cout << "Today's special: " << meal_name << endl;
     cout << endl;
     cout << "How many would you like? ";
