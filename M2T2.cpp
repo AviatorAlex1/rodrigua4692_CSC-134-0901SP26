@@ -25,9 +25,9 @@ int main(){
     cout << "welcome to Alex's Pizza Spot " << endl;
     cout << "Today's special: " << meal_name << endl;
     cout << endl;
-    cout << "How many would you like? ";
+    cout << "How many would you like? :";
     cin >> num_meals;
-    cout << "Tip amount? (min 0)? ";
+    cout << "Tip amount? (min 0)? :";
     cin >> tip_amount;
 
     
