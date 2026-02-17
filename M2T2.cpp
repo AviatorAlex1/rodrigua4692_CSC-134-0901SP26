@@ -12,7 +12,7 @@ using namespace std;
 
 int main(){
     //variables
-    string meal_name = "Hawiian Calzone";
+    string meal_name = "Hawaiian Calzone";
     int     num_meals; 
     double meal_price = 8.99;//Change
     double sub_total; 
