@@ -8,6 +8,7 @@ Reciept Printer
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -35,7 +36,9 @@ int main(){
     sub_total = meal_price * num_meals;
     tax_amount = sub_total * tax_rate;
     total_price = sub_total + tax_amount + tip_amount;
-    // Show the results 
+    // Show the results
+    cout << setprecision(2) << fixed;
+    cout << endl;
     cout << "Your Order:" << endl << "--------------------------------" << endl;
     cout << num_meals << " X " << meal_name << "\t$" << meal_price << endl;
     cout << "Subtotal: \t\t$" << sub_total << endl;
