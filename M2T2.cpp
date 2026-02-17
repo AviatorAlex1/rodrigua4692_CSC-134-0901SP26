@@ -39,9 +39,9 @@ int main(){
     cout << "Your Order:" << endl << "--------------------------------" << endl;
     cout << num_meals << " X " << meal_name << "\t$" << meal_price << endl;
     cout << "Subtotal: \t\t$" << sub_total << endl;
-    cout << "Tip: \t\t\t$" << tip_amount << endl;
-    cout << "Tax: \t\t\t$" << tax_amount << endl;
-    cout << "Total: \t\t\t$" << total_price << endl;
+    cout << "Tip: \t\t$" << tip_amount << endl;
+    cout << "Tax: \t\t$" << tax_amount << endl;
+    cout << "Total: \t\t$" << total_price << endl;
 
 
 
