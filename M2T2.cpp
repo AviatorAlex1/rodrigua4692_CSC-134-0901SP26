@@ -27,7 +27,7 @@ int main(){
     cout << endl;
     cout << "How many would you like? ";
     cin >> num_meals;
-    cout << "Tip amount? (min 0)"
+    cout << "Tip amount? (min 0)";
 
     
     // Do math things
