@@ -33,7 +33,7 @@ int main(){
     sub_total = meal_price * num_meals;
 
     // Show the results 
-    cout << "Your Order:" << endl << "-----------------------------" << endl;
+    cout << "Your Order:" << endl << "--------------------------------" << endl;
     cout << num_meals << " X " << meal_name << "\t$" << meal_price << endl;
     cout << "Subtotal: \t\t$" << sub_total << endl;
 
