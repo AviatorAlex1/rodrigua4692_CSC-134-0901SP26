@@ -43,6 +43,6 @@ int main ()
     cout << volume << " cubic feet. \n";
     cout << "cost to build:  $" << cost << endl;
     cout << " Charge to customer: $" << charge << endl;
-    cout << "Profit:  $" < profit << endl;
+    cout << "Profit:  $" << profit << endl;
 return 0;
 }
