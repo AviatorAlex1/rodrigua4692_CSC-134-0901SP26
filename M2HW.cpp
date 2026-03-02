@@ -42,7 +42,7 @@ int main ()
    cout << "Name: " << name << endl;
    cout << "Account Number: " << AccountNumber << endl;
    cout << "Final Balance: $" << FinalBalance << endl;
-    endl;
+   cout << endl;
 
 
     //Variables
