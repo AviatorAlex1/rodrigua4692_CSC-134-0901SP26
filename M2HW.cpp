@@ -23,7 +23,7 @@ int main ()
    double WithdrawlAMT;
    double FinalBalance;
 
-   cout << "Enter your First Name: ";
+   cout << "Enter your Full Name (First Last): ";
    getline(cin, name);
 
    cout << "Enter starting balance:  ";
@@ -42,8 +42,7 @@ int main ()
    cout << "Name: " << name << endl;
    cout << "Account Number: " << AccountNumber << endl;
    cout << "Final Balance: $" << FinalBalance << endl;
-
-   cin.ignore();
+    endl;
 
 
     //Variables
