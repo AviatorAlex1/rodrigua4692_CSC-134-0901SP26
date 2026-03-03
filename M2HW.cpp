@@ -44,9 +44,10 @@ int main ()
    cout << "Final Balance: $" << FinalBalance << endl;
    cout << endl;
 
-//----------------------------------------------------------------
-//Q2 
-//Variables
+    //----------------------------------------------------------------
+    //Q2 
+    cout << "Question 2 - General Crates Inflation" << endl;
+    //Variables
     const double COST_PER_CUBIC_FOOT = 0.30; 
     const double CHARGE_PER_CUBIC_FOOT = 0.52;
 
@@ -82,4 +83,32 @@ int main ()
     cout << " Charge to customer: $" << charge << endl;
     cout << "Profit:  $" << profit << endl;
 
+
+    //----------------------------------------------------------------
+    //Q3 
+    cout << "Question 3 - Pizza Slices" << endl;
+
+    int pizzas;
+    int SlicesPerPizza;
+    int visitors;
+    // Get the Number of Pizzas
+    cout << "How many total pizzas were ordered? ";
+    cin >> pizzas;
+    // Get the number of slices Per Pizza
+    cout << "How many total slices are there per pizza? ";
+    cin >> SlicesPerPizza;
+    // Total # of Visitors that require pizza
+    cout << "How many visitors are coming? ";
+    cin >> visitors;
+
+    // Do some Math per Pizza
+    int TotalSlices = pizzas * SlicesPerPizza;
+    int SlicesReq = visitors * 2; 
+    int SlicesRemain = TotalSlices - SlicesReq; 
+
+    //Total it up
+    cout << "There are: " << SlicesRemain << "of Pizza remaining." << endl;
+    
+
+return 0;
 }
