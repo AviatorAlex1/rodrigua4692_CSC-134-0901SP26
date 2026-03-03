@@ -22,8 +22,13 @@ int main ()
     const int MAX = 6;
     int roll = rand() % MAX;
 
+    roll = (rand() % MAX) + 1;
     cout << "Your First roll was: " << roll << endl;
+
+    roll = (rand() % MAX) + 1;
     cout << "and your Second Roll was: " << rand() % MAX;
+
+    roll = (rand() % MAX) + 1;
     cout << " and the Third Roll was: " << rand() % MAX; 
 
     cout << endl;
