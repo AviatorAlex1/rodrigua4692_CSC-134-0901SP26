@@ -117,26 +117,26 @@ int main ()
     cout << endl;
 
     // Variables
-    string Text;
+    string LetsGo;
     string School;
     string Team;
-    string Mess1;
-    string Mess2;
+    string CheerOne;
+    string CheerTwo;
 
     // Text Strings Config
-    Text = "Let's Go ";
+    LetsGo = "Let's Go ";
     School = "FTCC";
     Team = "Trojans";
 
     //Messages Combined Variables
-    Mess1 = Text + School;
-    Mess2 = Text + Team;
+    CheerOne = LetsGo + School;
+    CheerTwo = LetsGo + Team;
 
     //Put it together now!
-    cout << Mess1 << endl;
-    cout << Mess1 << endl;
-    cout << Mess1 << endl;
-    cout << Mess2 << endl;
+    cout << CheerOne << endl;
+    cout << CheerOne << endl;
+    cout << CheerOne << endl;
+    cout << CheerTwo << endl;
 
     cout << endl;
     cout << endl;
