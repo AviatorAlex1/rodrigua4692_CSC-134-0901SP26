@@ -141,8 +141,8 @@ int main ()
     cout << endl;
     cout << endl;
 
-
-    cout << "End of Assignment!!" << endl;
     //End of a long assignment!!
+    cout << "End of Assignment!!" << endl;
+    cout << endl;
 return 0;
 }
