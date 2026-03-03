@@ -44,7 +44,7 @@ int main ()
    cout << "Final Balance: $" << FinalBalance << endl;
    cout << endl;
 
-    //----------------------------------------------------------------
+   cout << "----------------------------------------------------------------" << endl;
     //Q2 
     cout << "Question 2 - General Crates Inflation" << endl;
     //Variables
@@ -82,9 +82,10 @@ int main ()
     cout << "cost to build:  $" << cost << endl;
     cout << " Charge to customer: $" << charge << endl;
     cout << "Profit:  $" << profit << endl;
+    cout << endl;
 
 
-    //----------------------------------------------------------------
+    cout << "----------------------------------------------------------------" << endl;
     //Q3 
     cout << "Question 3 - Pizza Slices" << endl;
 
@@ -107,8 +108,36 @@ int main ()
     int SlicesRemain = TotalSlices - SlicesReq; 
 
     //Total it up
-    cout << "There are: " << SlicesRemain << "of Pizza remaining." << endl;
-    
+    cout << "There are: " << SlicesRemain << " slices of Pizza remaining." << endl;
+    cout << endl;
 
+    cout << "----------------------------------------------------------------" << endl;
+    //Q4 
+    cout << "Question 4 - Team Spirit" << endl;
+    cout << endl;
+
+    // Variables
+    string Text;
+    string School;
+    string Team;
+    string Mess1;
+    string Mess2;
+
+    // Text Strings Config
+    Text = "Let's Go ";
+    School = "FTCC";
+    Team = "Trojans";
+
+    //Messages Combined Variables
+    Mess1 = Text + School;
+    Mess2 = Text + Team;
+
+    //Put it together now!
+    cout << Mess1 << endl;
+    cout << Mess1 << endl;
+    cout << Mess1 << endl;
+    cout << Mess2 << endl;
+
+    //End of a long assignment!!
 return 0;
 }
