@@ -15,7 +15,7 @@ int main ()
     cin >> grade; 
 
     if (grade < 0 || grade > 100 ) { 
-        cout >> "This is an invalid number, Please enter a number between 0 and 100. ";
+        cout << "This is an invalid number, Please enter a number between 0 and 100. ";
     }
     else if (grade >= 90 && grade <= 100) { 
         cout << "This is a Letter Grade of: A " << endl;
