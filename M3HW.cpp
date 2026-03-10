@@ -7,10 +7,20 @@ rodrigua4692
 
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
+
+void Path_1();
+void Path_2();
 
 int main()
 {
+
+    cout << endl;
+    cout << "=====================================================" << endl;
+    cout << "QUESTION 1 - Chat Bot" << endl;
+    cout <<endl;
 
     // Question 1
 
@@ -37,6 +47,10 @@ int main()
     }
     // Q1 FIN.
 
+    cout << endl;
+    cout << "=====================================================" << endl;
+    cout << "QUESTION 2 - Reciept Calculator" << endl;
+    cout <<endl;
 
     // Question 2
 
@@ -90,5 +104,93 @@ int main()
     cout << "Thank you for dining with us!" << endl; 
     
     // Q2 FIN.
+
+    cout << endl;
+    cout << "=====================================================" << endl;
+    cout << "QUESTION 3 - Choose your Own Adventure Game RPG" << endl;
+    cout <<endl;
+
+    // Question 3:
+
+    int Game_choice;
+
+    cout << "Welcome to the Dungeon!!" << endl;
+    cout << endl;
+    cout << "You are a Warrior Knight that has awoken to the Princess being kidnapped by evil orcs..." << endl;
+    cout << "You mission is to choose the right path to the Princess's castle and save her from the orcs before they get away with her..." << endl; 
+    cout << endl;
+    cout << "You approach a split in the road... 1) Forest of the Wicked or 2) The Dark Shadow-y path of Dispair... What path do you choose?: " << endl; 
+    cin >> Game_choice; 
+    
+     if (1 == Game_choice) {
+        Path_1();
+    }
+    else if (2 == Game_choice) {
+        Path_2();
+    }
+    else {
+        cout << "I'm sorry, that is not a valid path to take!!" << endl;
+    }
+
+    cout << endl;
+    
+    // Q3 FIN.
+
+    cout << endl;
+    cout << "=====================================================" << endl;
+    cout << "QUESTION 4 - MATH PRACTICE" << endl;
+    cout <<endl;
+
+    // Question 4 
+
+    // Q4 Variables
+    int num1, num2;
+    int user_answer;
+    int correct_answer;
+
+    // Seed the random number generator
+    srand(time(0));
+
+    // Generate two random single-digit numbers
+    num1 = rand() % 10;
+    num2 = rand() % 10;
+
+    // Ask the math question
+    cout << "What is " << num1 << " plus " << num2 << "?" << endl;
+
+    cin >> user_answer;
+
+    // Calculate correct answer
+    correct_answer = num1 + num2;
+
+    // Check if correct
+    if (user_answer == correct_answer) {
+        cout << "Correct!" << endl;
+    }
+    else {
+        cout << "Incorrect." << endl;
+    }
+
+    // Q4 Fin. 
+    // FINALLY!!!!
+
+
     return 0;
 }
+
+// FUNCTIONS FOR THE RPG GAME IN Q3: 
+
+void Path_1() {
+  // this function is called in main if the user chooses 1.
+  cout << "You Chose to go into the Forest of the Wicked" << endl;
+  cout << "As you enter into the forest you get attacked by a pack of wicked demon dogs that you are ill-equipped to fight!" << endl;
+  cout << "You get mauled to death.. GAME OVER!!!!";
+}
+
+void Path_2() {
+  // this function is called in main if the user chooses 1.
+  cout << "You Chose to go into The Dark Shadow-y path of Dispair" << endl;
+  cout << "As you enter defeat a Orc Patrol and discover a hidden path to the Princess's castle!!!" << endl;
+  cout << "After Defeating the Orcs at the castle you manage to save the Princess and become the new prince... VICTORY!!!";
+}
+// END OF Q3 FUNCTIONS FOR RPG GAME IN Q3
