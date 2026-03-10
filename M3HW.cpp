@@ -9,7 +9,8 @@ rodrigua4692
 #include <iomanip>
 using namespace std;
 
-int main(){
+int main()
+{
 
     // Question 1
 
