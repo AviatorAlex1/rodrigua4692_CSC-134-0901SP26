@@ -15,7 +15,7 @@ void printResult(int number, int result) {
 // Given a numner, Return the Square of it
 int square (int number) {
     int result;
-    result = numner * number;
+    result = number * number;
     return result;
 
 }
