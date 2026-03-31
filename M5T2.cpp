@@ -12,13 +12,19 @@ void printResult(int number, int result) {
     cout << number << " squared=" << result << endl;
 }
 
+// Given a numner, Return the Square of it
+int square (int number) {
+    int result;
+    result = numner * number;
+    return result;
+
+}
 int main() {
     int count = 1;
     int result; 
 
     while (count <= 10){
-        result = count * count;
-        //cout << count << "squared = " << result << endl;
+       result = square(count);
         printResult(count,result);
         count++;
 
