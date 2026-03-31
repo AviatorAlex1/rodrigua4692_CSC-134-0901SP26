@@ -7,6 +7,7 @@
 #include <iostream>
 using namespace std;
 
+// Given 2 numbers, Print them out on a line
 void printResult(int number, int result) {
     cout << number << " squared=" << result << endl;
 }
