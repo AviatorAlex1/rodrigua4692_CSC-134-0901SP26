@@ -54,3 +54,8 @@ void displayData(double length, double width, double area) {
     cout << "Area   : " << area   << endl;
     cout << "-----------------------------" << endl;
 }
+
+//***************************************************
+// TODO: write the getLength, getWidth, getArea,    *
+// and displayData functions below.                 *
+//***************************************************
