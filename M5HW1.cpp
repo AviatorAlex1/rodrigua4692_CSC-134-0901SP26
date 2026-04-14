@@ -8,6 +8,8 @@
 #include <iomanip>
 using namespace std;
 
+// QUESTION 1: 
+
 int main() {
     string month1, month2, month3;
     double rain1, rain2, rain3;
