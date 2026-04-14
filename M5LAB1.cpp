@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-//functions
+//functions prototypes
 void main_menu();
 void choice_join_empire();
 void choice_join_rebellion();
@@ -17,7 +17,7 @@ void choice_use_force();
 
 int main() {
     cout << "==================================" << endl;
-    cout << "  STAR WARS: A GALAXY DIVIDED" << endl;
+    cout << " M5LAB1: STAR WARS: A GALAXY DIVIDED" << endl;
     cout << "==================================" << endl;
     cout << "You are a young pilot on Tatooine." << endl;
     cout << "A hooded stranger approaches you..." << endl;
