@@ -24,28 +24,29 @@ void displayData(double length, double width, double area);
 int main()
 {
     // This program calculates the area of a rectangle.
-// Asks the user to enter the rectangle's length and returns it as a double
+    // TODO: fix any syntax errors
+
+// Get the rectangle's length.
 double getLength() {
     double length;
     cout << "Enter the length of the rectangle: ";
     cin >> length;
     return length;
 }
- 
-// Asks the user to enter the rectangle's width and returns it as a double
+
+// Get the rectangle's width.
 double getWidth() {
     double width;
     cout << "Enter the width of the rectangle: ";
     cin >> width;
     return width;
 }
- 
-// Calculates and returns the area given length and width
+
+// Get the rectangle's area. 
 double getArea(double length, double width) {
     return length * width;
 }
  
-// Displays length, width, and area in well-formatted output
 void displayData(double length, double width, double area) {
     cout << "\n--- Rectangle Information ---" << endl;
     cout << "Length : " << length << endl;
