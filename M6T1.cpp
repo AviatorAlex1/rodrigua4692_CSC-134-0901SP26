@@ -9,7 +9,7 @@ void method2();
 int main() {
     // Count # of Cars per day, two different ways
     method1();
-    
+
     cout << endl;
     cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=" << endl;
     cout << endl;
@@ -41,11 +41,6 @@ void method1() {
     car_avg = (double) car_total / SIZE;
     cout << "Average = " << car_avg << endl;
 }
-
-cout << endl;
-cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=" << endl;
-cout << endl;
-
 void method2() {
     // Method 2 uses two arrays:
     // Names of the days
