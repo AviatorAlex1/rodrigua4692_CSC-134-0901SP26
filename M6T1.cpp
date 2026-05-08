@@ -1,77 +1,67 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-void part1();
-void part2();
+// Function Declarations
+void method1();
+void method2();
 
+// main
 int main() {
-    part1();
-    part2();
+    // Count # of Cars per day, two different ways
+    method1();
+    method2();
 
     return 0;
 }
 
-void part1() {
-    const int DAYS = 5;
-    string days[DAYS] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+// function definitions
+void method1() {
+    // Method one - Simple Loop, no arrays
+    // Count 5 days of cars , get total and average
+    cout << "Count the amount of cars that pass by the site" << endl;
+    cout << "Day 0 = Monday, Day 4 = Friday" << endl;
+    const int SIZE = 5;
+    int count = 0;
+    int car_today;     // current value, to add
+    int car_total = 0; // add up 
+    double car_avg = 0;// average
 
-    int cars;
-    int total = 0;
-    double average;
-
-    cout << "Part 1 - No Arrays for Car Counts" << endl;
-
-    for (int i = 0; i < DAYS; i++) {
-        cout << "Enter cars counted on " << days[i] << ": ";
-        cin >> cars;
-
-        total += cars;
+    while (count < SIZE) {
+        cout << "Day " << count << ": ";
+        cin >> car_today;
+        car_total += car_today;
+        count++; // Move to next day
     }
-
-    average = static_cast<double>(total) / DAYS;
-
-    cout << "\nTotal cars for the week: " << total << endl;
-    cout << "Average cars per day: " << average << endl;
+    cout << "Total = " << car_total << endl;
+    car_avg = (double) car_total / SIZE;
+    cout << "Average = " << car_avg << endl;
 }
 
-void part2() {
-    const int DAYS = 5;
-    string days[DAYS] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-    int cars[DAYS];
+void method2() {
+    // Method 2 uses two arrays:
+    // Names of the days
+    // # pokemon found on the days
 
-    int total = 0;
-    double average;
+    const int SIZE = 5;
+    string days[SIZE] = {"M", "T", "W", "Th", "F"}; // initialized
+    int car[SIZE]; // not initialized
+    int car_total = 0;
+    double car_avg = 0.0;
 
-    cout << "\nPart 2 - Using an Array" << endl;
-
-    for (int i = 0; i < DAYS; i++) {
-        cout << "Enter cars counted on " << days[i] << ": ";
-        cin >> cars[i];
-
-        total += cars[i];
+    for (int i=0; i < SIZE; i++) {
+        cout << "# on " << days[i] << ": ";
+        cin >> car[i];
     }
-
-    average = static_cast<double>(total) / DAYS;
-
-    cout << "\nTotal cars for the week: " << total << endl;
-    cout << "Average cars per day: " << average << endl;
-
-    cout << "\nWeekly Car Count Data" << endl;
-
-    for (int i = 0; i < DAYS; i++) {
-        cout << days[i] << ": " << cars[i] << " cars" << endl;
+    // print output in "tabular" (table) format
+    cout << "Day\tCar" << endl;
+    for (int i=0; i < SIZE; i++) {
+        cout << days[i] << "\t" << car[i] << endl;
+        // find the total
+        car_total += car[i];
     }
+    // find total, print results
+    car_avg = (double) car_total / SIZE;
+    cout << "Total = " << car_total << endl;
+    cout << "Average = " << car_avg << endl;
 
-    cout << "\nASCII Bar Chart" << endl;
-
-    for (int i = 0; i < DAYS; i++) {
-        cout << days[i] << ": ";
-
-        for (int j = 0; j < cars[i]; j++) {
-            cout << "*";
-        }
-
-        cout << endl;
-    }
 }
