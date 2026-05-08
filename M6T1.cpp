@@ -15,7 +15,10 @@ int main() {
     cout << endl;
 
     method2();
-
+    
+    cout << endl;
+    cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=" << endl;
+    cout << endl;
     return 0;
 }
 
