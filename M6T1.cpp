@@ -9,6 +9,11 @@ void method2();
 int main() {
     // Count # of Cars per day, two different ways
     method1();
+    
+    cout << endl;
+    cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=" << endl;
+    cout << endl;
+
     method2();
 
     return 0;
@@ -37,10 +42,14 @@ void method1() {
     cout << "Average = " << car_avg << endl;
 }
 
+cout << endl;
+cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=" << endl;
+cout << endl;
+
 void method2() {
     // Method 2 uses two arrays:
     // Names of the days
-    // # pokemon found on the days
+    // # Cars found on the days
 
     const int SIZE = 5;
     string days[SIZE] = {"M", "T", "W", "Th", "F"}; // initialized
