@@ -1,3 +1,8 @@
+//CSC 134
+//M6T1 - Loops and Arrays
+//Rodrigua4692
+//23 APR 2026
+
 #include <iostream>
 using namespace std;
 
